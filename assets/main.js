@@ -1,14 +1,5 @@
 AOS.init();
 
-var options = {
-  strings: ["FRONT END DEVELOPER"],
-  typeSpeed: 80,
-  backSpeed: 50,
-  loop: true
-};
-
-var typed = new Typed(".write", options);
-
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -92,15 +83,15 @@ function closeMenu(){
 }, 1000)
 }
 
-const clickable = document.querySelector("#lgOpen")
-const lgoptions = document.querySelector(".language-options")
-const pt = document.querySelector(".pt")
-const eng = document.querySelector(".eng")
 
-function languageOpen() {
-  if (lgoptions.style.display === "none" || lgoptions.style.display === "") {
-    lgoptions.style.display = "flex";
+function optionslg() {
+  var lgop = document.querySelector(".language-options");
+
+  var visibility = window.getComputedStyle(lgop).visibility;
+
+  if (visibility === "hidden") { 
+    lgop.style.visibility = "visible"; 
   } else {
-    lgoptions.style.display = "none";
+    lgop.style.visibility = "hidden"; 
   }
 }

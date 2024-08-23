@@ -1,14 +1,5 @@
 AOS.init();
 
-var options = {
-  strings: ["DESENVOLVEDOR FRONT END"],
-  typeSpeed: 80,
-  backSpeed: 50,
-  loop: true
-};
-
-var typed = new Typed(".write", options);
-
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -102,5 +93,17 @@ function languageOpen() {
     lgoptions.style.display = "flex";
   } else {
     lgoptions.style.display = "none";
+  }
+}
+
+function optionslg() {
+  var lgop = document.querySelector(".language-options");
+
+  var visibility = window.getComputedStyle(lgop).visibility;
+
+  if (visibility === "hidden") { 
+    lgop.style.visibility = "visible"; 
+  } else {
+    lgop.style.visibility = "hidden"; 
   }
 }
