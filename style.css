@@ -485,8 +485,7 @@ header{
 
 .form-content input::placeholder{
     position: absolute;
-    top: 1rem; 
-    transform: translateY(0); 
+    top: 30%;  
 }
 
 textarea{   
@@ -691,7 +690,7 @@ textarea:focus{
     }
     .hero{
         flex-direction: column;
-        padding: 10% 10% 0 10%;
+        padding: 6rem 10% 0 10%;
         text-align: center;
         justify-content: center;
         gap: 5%;
@@ -824,5 +823,8 @@ textarea:focus{
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+    }
+    .send button{
+        font-size: 12px;
     }
 }
