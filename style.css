@@ -351,6 +351,7 @@ header{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    height: 280px;
 }
 
 .overlay {
@@ -394,6 +395,7 @@ header{
 
 .box-projects-text{
     width: 50%;
+    text-align: start;
 }
 
 .box-projects-text h2{
@@ -481,11 +483,6 @@ header{
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: white;
-}
-
-.form-content input::placeholder{
-    position: absolute;
-    top: 30%;  
 }
 
 textarea{   
@@ -786,6 +783,7 @@ textarea:focus{
     .box-projects{
         flex-direction: column;
         padding: 1rem;
+        height: 400px;
     }
     .box-projects-text{
         width: 100%;
